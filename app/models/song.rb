@@ -1,3 +1,3 @@
 class Song < ApplicationRecord
-    has_many :song_tag
+    has_many :song_tag, dependent: :destroy
 end
